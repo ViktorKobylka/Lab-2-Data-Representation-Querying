@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Content from './components/content';
 
 function App() {
 
@@ -7,8 +8,7 @@ function App() {
   return (
     
     <div className="App">
-      <h1>Hello World!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      <Content />
     </div>
   );
 }
