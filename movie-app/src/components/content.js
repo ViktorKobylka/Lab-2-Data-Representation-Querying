@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Content = () => {
+  //get Hello World and time
   return (
     <div>
       <h1>Hello World!</h1>

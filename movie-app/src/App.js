@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Content from './components/content';
 
 function App() {
+  //Routing function to home = Content, read = Footer, create = Header
   return (
     <Router>
       <NavigationBar />
