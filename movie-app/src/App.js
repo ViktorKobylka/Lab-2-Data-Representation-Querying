@@ -1,20 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavigationBar from './components/navigationBar';
 import Header from './components/header';
-import Content from './components/content';
 import Footer from './components/footer';
-
+import Content from './components/content';
 
 function App() {
-
-
   return (
-    
-    <div className="App">
-      <Header />
-      <Content />
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/home" element={<Content />} />
+        <Route path="/read" element={<h1>Read Component</h1>} />
+        <Route path="/create" element={<h1>Create Component</h1>} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
